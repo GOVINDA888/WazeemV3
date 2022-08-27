@@ -29,7 +29,7 @@ class script(object):
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
-    FILTERMENU_TXT"""Currently I Have 2 Filter Options!!!
+    FILTERMENU_TXT = """Currently I Have 2 Filter Options!!!
  Here Is It"""
     
     BUTTON_TXT = """Help: <b>Buttons</b>
@@ -101,7 +101,7 @@ This module only works for my admins
 🗂️ ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code> 𝙼𝚒𝙱
 🛒 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝚒𝙱
 """
-    CPU_TXT="""<u>Mʏ Sᴇʀᴠᴇʀ Sᴛᴀᴛᴜs 💫</u>
+    CPU_TXT = """<u>Mʏ Sᴇʀᴠᴇʀ Sᴛᴀᴛᴜs 💫</u>
 
 💻 Cᴘᴜ Usᴀɢᴇ :</b> {}%
 ☄️ RAM Usᴀɢᴇ :</b> {}%
