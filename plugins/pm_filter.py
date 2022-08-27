@@ -594,7 +594,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "stats_cpu":
-        buttons = [
+        buttons = [[
             InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
