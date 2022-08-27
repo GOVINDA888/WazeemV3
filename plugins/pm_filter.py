@@ -428,11 +428,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/Humen_tg'),
-            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟs', url='https://t.me/CVFilmz')
-        ], [
-            InlineKeyboardButton('ℹ️ ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('♨️ ᴀʙᴏᴜᴛ', callback_data='about')
+            
+            InlineKeyboardButton(' Hᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton(' Aʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -443,14 +441,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('Ham🌜')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('ᴍᴀɴᴜᴇʟ ғɪʟᴛᴇʀ', callback_data='manuelfilter'),
-            InlineKeyboardButton('ᴀᴜᴛᴏ ғɪʟᴛᴇʀ', callback_data='autofilter')
+            InlineKeyboardButton('Fɪʟᴛᴇʀ', callback_data='filter_menu'),
+            InlineKeyboardButton('Cᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct')
         ], [
-            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct'),
-            InlineKeyboardButton('ᴇxᴛʀᴀ ᴍᴏᴅᴇs', callback_data='extra')
+            InlineKeyboardButton('Iɴғᴏ', callback_data='info'),
+            InlineKeyboardButton('Exᴛʀᴀ', callback_data='extra')
         ], [
-            InlineKeyboardButton('🏠 ʜᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔮 sᴛᴀᴛᴜs', callback_data='stats')
+            InlineKeyboardButton('Bᴀᴄᴋ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -461,9 +458,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             
-            InlineKeyboardButton('🛒 sᴏᴜʀᴄᴇ', callback_data='source')
+            InlineKeyboardButton('Sᴏᴜʀᴄᴇ', callback_data='source'),
+            InlineKeyboardButton('𝖲ᴛᴀᴛᴜs', callback_data='stats')
         ], [
-            InlineKeyboardButton('🏠 ʜᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('Bᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('🔐 ᴄʟᴏsᴇ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
