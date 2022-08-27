@@ -85,14 +85,14 @@ async def next_page(bot, query):
         ]
     btn.insert(0,
         [
-            InlineKeyboardButton(f'♨️ {search} ♨️', 'tips')
+            InlineKeyboardButton(f'♨️ {search} ♨️', 'copyright')
         ]
     )
     btn.insert(1,
         [
-               InlineKeyboardButton(f'{len(files)} ғɪʟᴇs', 'files'),
-               InlineKeyboardButton(f'ᴛɪᴘs', 'tips'),
-               InlineKeyboardButton(f'ᴍᴏʀᴇ', 'more')
+               InlineKeyboardButton(f'{len(files)} ғɪʟᴇs', 'dump'),
+               InlineKeyboardButton(f'ﾠ', 'dump'),
+               InlineKeyboardButton(f'Tɪᴘs', 'tips')
         ]
     )
     if 0 < offset <= 10:
@@ -444,7 +444,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Fɪʟᴛᴇʀ', callback_data='filter_menu'),
             InlineKeyboardButton('Cᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct')
         ], [
-            InlineKeyboardButton('Iɴғᴏ', callback_data='info'),
+            InlineKeyboardButton('Sᴛᴀᴛᴜs', callback_data='stats'),
             InlineKeyboardButton('Exᴛʀᴀ', callback_data='extra')
         ], [
             InlineKeyboardButton('Bᴀᴄᴋ', callback_data='start')
@@ -594,21 +594,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "stats_cpu":
-        buttons = [[
-
+        buttons = [
             InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='stats')
-
         ]]
-
         reply_markup = InlineKeyboardMarkup(buttons)
-
         await query.message.edit_text(
-
             text=script.CPU_TXT,
-
             reply_markup=reply_markup,
-
             parse_mode=enums.ParseMode.HTML
+        )
     elif query.data == "tips":
         await query.answer("ᴍᴏᴠɪᴇ\n\nSend Movie Name With Correct Spelling,if you still don't get it, add the Released year\nexample:- Thallumala 2022\n━━━━━━━━━━━━━━━━\nsᴇʀɪᴇs\nSend Series Name With Correct Spelling and Season,Episode.\n\nexample: I Am Groot S01 E01\n\n© Wᴀᴢᴇᴇᴍ", show_alert=True),
     elif query.data == "more":
@@ -729,9 +723,9 @@ async def auto_filter(client, msg, spoll=False):
     )
     btn.insert(1,
         [
-               InlineKeyboardButton(f'{len(files)} ғɪʟᴇs', 'files'),
-               InlineKeyboardButton(f'ᴛɪᴘs', 'tips'),
-               InlineKeyboardButton(f'ᴍᴏʀᴇ', 'more')
+               InlineKeyboardButton(f'{len(files)} Fɪʟᴇs', 'dump'),
+               InlineKeyboardButton(f'ﾠ', 'dump'),
+               InlineKeyboardButton(f'Tɪᴘs', 'tips')
         ]
     )
 
