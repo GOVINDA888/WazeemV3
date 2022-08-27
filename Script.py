@@ -29,13 +29,16 @@ class script(object):
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
+    FILTERMENU_TXT"""Currently I Have 2 Filter Options!!!
+ Here Is It"""
+    
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- Eva Maria Supports both url and alert inline buttons.
+- Wazeem Bot Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. Eva Maria supports buttons with any telegram media type.
+2. Wazeem Bot supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
@@ -97,10 +100,12 @@ This module only works for my admins
 👥 ɢʀᴏᴜᴘs: <code>114</code>
 🗂️ ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code> 𝙼𝚒𝙱
 🛒 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝚒𝙱
+"""
+    CPU_TXT="""<u>Mʏ Sᴇʀᴠᴇʀ Sᴛᴀᴛᴜs 💫</u>
 
-<u>Mʏ Sᴇʀᴠᴇʀ Sᴛᴀᴛᴜs 💫</u>
 💻 Cᴘᴜ Usᴀɢᴇ :</b> {}%
-☄️ RAM Usᴀɢᴇ :</b> {}%"""
+☄️ RAM Usᴀɢᴇ :</b> {}%
+"""
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
