@@ -455,14 +455,26 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    elif query.data == "filter_menu":
+        buttons = [[
+            InlineKeyboardButton('Aᴜᴛᴏ', callback_data='autofilter'),
+            InlineKeyboardButton('Mᴀɴᴜᴇʟ', callback_data='manuelfilter')
+        ], [
+            InlineKeyboardButton('Bᴀᴄᴋ', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.FILTERMENU_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
     elif query.data == "about":
         buttons = [[
             
             InlineKeyboardButton('Sᴏᴜʀᴄᴇ', callback_data='source'),
-            InlineKeyboardButton('𝖲ᴛᴀᴛᴜs', callback_data='stats')
+            InlineKeyboardButton('Sᴛᴀᴛᴜs', callback_data='stats')
         ], [
-            InlineKeyboardButton('Bᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('🔐 ᴄʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('Bᴀᴄᴋ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -544,8 +556,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "stats":
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('Cᴘᴜ Sᴛᴀᴛᴜs', callback_data='stats_cpu'),
             InlineKeyboardButton('♻️ ʀᴇғʀᴇsʜ', callback_data='rfrsh')
+        ], [
+            InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -579,6 +593,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    elif query.data == "stats_cpu":
+        buttons = [[
+
+            InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='stats')
+
+        ]]
+
+        reply_markup = InlineKeyboardMarkup(buttons)
+
+        await query.message.edit_text(
+
+            text=script.CPU_TXT,
+
+            reply_markup=reply_markup,
+
+            parse_mode=enums.ParseMode.HTML
     elif query.data == "tips":
         await query.answer("ᴍᴏᴠɪᴇ\n\nSend Movie Name With Correct Spelling,if you still don't get it, add the Released year\nexample:- Thallumala 2022\n━━━━━━━━━━━━━━━━\nsᴇʀɪᴇs\nSend Series Name With Correct Spelling and Season,Episode.\n\nexample: I Am Groot S01 E01\n\n© Wᴀᴢᴇᴇᴍ", show_alert=True),
     elif query.data == "more":
