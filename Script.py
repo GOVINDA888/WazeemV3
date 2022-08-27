@@ -101,10 +101,10 @@ This module only works for my admins
 🗂️ ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code> 𝙼𝚒𝙱
 🛒 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝚒𝙱
 """
-    CPU_TXT = """<u>Mʏ Sᴇʀᴠᴇʀ Sᴛᴀᴛᴜs 💫</u>
+    CPU_TXT = """<u>This Option Coming Soon</u>
 
-💻 Cᴘᴜ Usᴀɢᴇ :</b> {}%
-☄️ RAM Usᴀɢᴇ :</b> {}%
+This Option Use For To Know My CPU & Ram Usage's percentage... Currently My Devoleper Not Added But It will be added in the future⚡
+ ⏳ Sᴛᴀʏ Tᴜɴᴇᴅ
 """
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
