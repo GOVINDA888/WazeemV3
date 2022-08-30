@@ -376,7 +376,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('ʙʀᴏ ᴄʜᴇᴄᴋ ᴘᴍ😌', show_alert=True)
+                await query.answer('Cʜᴇᴄᴋ Pᴍ😌', show_alert=True)
         except UserIsBlocked:
             await query.answer('unbolck me/start me in pm !', show_alert=True)
         except PeerIdInvalid:
@@ -414,7 +414,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "humen":
         buttons = [[
-        InlineKeyboardButton('♨️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ♨️', callback_data='start')
+        InlineKeyboardButton('𝖢𝗅𝗂𝖼𝗄 𝖧𝖾𝗋𝖾', callback_data='start')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -426,7 +426,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             
             InlineKeyboardButton(' Hᴇʟᴘ', callback_data='help'),
