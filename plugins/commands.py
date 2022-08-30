@@ -3,7 +3,6 @@ import logging
 import random
 import asyncio
 import datetime
-import pytz
 from Script import script
 from pyrogram import Client, filters, enums
 from pyrogram.errors import ChatAdminRequired, FloodWait
@@ -57,7 +56,7 @@ async def start(client, message):
             greet="ɢᴏᴏᴅ ɴɪɢʜᴛ"
             
         START_TXT = f"""
-<b>{greet} {message.from_user.mention}  ʙᴜᴅᴅʏ
+<b>ʜᴇʟʟᴏ Mʀ {message.from_user.mention}  ʙᴜᴅᴅʏ
 ᴍʏ ɴᴀᴍᴇ ɪꜱ  <a href=https://t.me/Adv_AutoFilBot><b>Wᴀᴢᴇᴇᴍ</b></a>  ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ʏᴏᴜ ᴍᴏᴠɪᴇꜱ ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴇᴇ ᴍʏ ᴘᴏᴡᴇʀ 😈</b>
 """
         buttons = [[
@@ -113,7 +112,7 @@ async def start(client, message):
         else:
             greet="ɢᴏᴏᴅ ɴɪɢʜᴛ"
             START_TXT = f"""
-<b>{greet} {message.from_user.mention}  ʙᴜᴅᴅʏ
+<b> {message.from_user.mention}  ʙᴜᴅᴅʏ
 ᴍʏ ɴᴀᴍᴇ ɪꜱ  <a href=https://t.me/Adv_AutoFilBot><b>Wᴀᴢᴇᴇᴍ</b></a>  ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ʏᴏᴜ ᴍᴏᴠɪᴇꜱ ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴇᴇ ᴍʏ ᴘᴏᴡᴇʀ 😈</b>
 """
         buttons = [[
