@@ -96,14 +96,15 @@ This module only works for my admins
     STATUS_TXT = """<u>Cᴜʀʀᴇɴᴛ Dᴀᴛᴀʙᴀsᴇ Sᴛᴀᴛᴜs</u>
 
 📑 ғɪʟᴇs sᴀᴠᴇᴅ: <code>{}</code>
-👩🏻‍💻 ᴜsᴇʀs: <code>4027</code>
-👥 ɢʀᴏᴜᴘs: <code>114</code>
+👩🏻‍💻 ᴜsᴇʀs: <code>{}</code>
+👥 ɢʀᴏᴜᴘs: <code>{}</code>
 🗂️ ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code> 𝙼𝚒𝙱
 🛒 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝚒𝙱
 """
     CPU_TXT = """<u>This Option Coming Soon</u>
 
 This Option Use For To Know My CPU & Ram Usage's percentage... Currently My Devoleper Not Added But It will be added in the future⚡
+ 
  ⏳ Sᴛᴀʏ Tᴜɴᴇᴅ
 """
     LOG_TEXT_G = """#NewGroup
