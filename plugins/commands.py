@@ -43,7 +43,7 @@ async def start(client, message):
     
         START_TXT = f"""
 <b>ʜᴇʟʟᴏ Mʀ {message.from_user.mention}  ʙᴜᴅᴅʏ
-ᴍʏ ɴᴀᴍᴇ ɪꜱ  <a href=https://t.me/Adv_AutoFilBot><b>Wᴀᴢᴇᴇᴍ</b></a>  ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ʏᴏᴜ ᴍᴏᴠɪᴇꜱ ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴇᴇ ᴍʏ ᴘᴏᴡᴇʀ 😈</b>
+ᴍʏ ɴᴀᴍᴇ ɪꜱ  <a href=https://t.me/{temp.U_NAME}><b>{temp.B_NAME}</b></a>  ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ʏᴏᴜ ᴍᴏᴠɪᴇꜱ ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴇᴇ ᴍʏ ᴘᴏᴡᴇʀ 😈</b>
 """
         buttons = [[
             InlineKeyboardButton('♨️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ♨️', callback_data='start')
@@ -88,11 +88,11 @@ async def start(client, message):
         
             START_TXT = f"""
 <b> {message.from_user.mention}  ʙᴜᴅᴅʏ
-ᴍʏ ɴᴀᴍᴇ ɪꜱ  <a href=https://t.me/Adv_AutoFilBot><b>Wᴀᴢᴇᴇᴍ</b></a>  ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ʏᴏᴜ ᴍᴏᴠɪᴇꜱ ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴇᴇ ᴍʏ ᴘᴏᴡᴇʀ 😈</b>
+ᴍʏ ɴᴀᴍᴇ ɪꜱ  <a href=https://t.me/{temp.U_NAME}><b>{temp.B_NAME}</b></a>  ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ʏᴏᴜ ᴍᴏᴠɪᴇꜱ ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴇᴇ ᴍʏ ᴘᴏᴡᴇʀ 😈</b>
 """
-        buttons = [
-                InlineKeyboardButton('♨️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ♨️', callback_data='start')
-        ]
+        buttons = [[
+            InlineKeyboardButton('♨️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ♨️', callback_data='start')
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
