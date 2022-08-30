@@ -41,20 +41,7 @@ async def start(client, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
-    if len(message.command) != 2:
-        T = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
-        
-        Time = T.hour
-        
-        if Time < 12:
-            greet="ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ" 
-        elif Time < 15:
-            greet="ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ"
-        elif Time < 20:
-            greet="ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ"
-        else:
-            greet="ɢᴏᴏᴅ ɴɪɢʜᴛ"
-            
+    
         START_TXT = f"""
 <b>ʜᴇʟʟᴏ Mʀ {message.from_user.mention}  ʙᴜᴅᴅʏ
 ᴍʏ ɴᴀᴍᴇ ɪꜱ  <a href=https://t.me/Adv_AutoFilBot><b>Wᴀᴢᴇᴇᴍ</b></a>  ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ʏᴏᴜ ᴍᴏᴠɪᴇꜱ ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴇᴇ ᴍʏ ᴘᴏᴡᴇʀ 😈</b>
@@ -99,18 +86,7 @@ async def start(client, message):
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
-        T = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
         
-        Time = T.hour
-        
-        if Time < 12:
-            greet="ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ" 
-        elif Time < 15:
-            greet="ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ" 
-        elif Time < 20:
-            greet="ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ"
-        else:
-            greet="ɢᴏᴏᴅ ɴɪɢʜᴛ"
             START_TXT = f"""
 <b> {message.from_user.mention}  ʙᴜᴅᴅʏ
 ᴍʏ ɴᴀᴍᴇ ɪꜱ  <a href=https://t.me/Adv_AutoFilBot><b>Wᴀᴢᴇᴇᴍ</b></a>  ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ʏᴏᴜ ᴍᴏᴠɪᴇꜱ ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴇᴇ ᴍʏ ᴘᴏᴡᴇʀ 😈</b>
