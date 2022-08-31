@@ -45,7 +45,7 @@ async def start(client, message):
 <b>ʜᴇʟʟᴏ Mʀ {message.from_user.mention}  ʙᴜᴅᴅʏ
 ᴍʏ ɴᴀᴍᴇ ɪꜱ  <a href=https://t.me/{temp.U_NAME}><b>{temp.B_NAME}</b></a>  ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ʏᴏᴜ ᴍᴏᴠɪᴇꜱ ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴇᴇ ᴍʏ ᴘᴏᴡᴇʀ 😈</b>
 """
-        buttons = [
+        btn = [
             InlineKeyboardButton('𝖢𝗅𝗂𝖼𝗄 𝖧𝖾𝗋𝖾', callback_data='start')
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -90,7 +90,7 @@ async def start(client, message):
 <b> {message.from_user.mention}  ʙᴜᴅᴅʏ
 ᴍʏ ɴᴀᴍᴇ ɪꜱ  <a href=https://t.me/{temp.U_NAME}><b>{temp.B_NAME}</b></a>  ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ʏᴏᴜ ᴍᴏᴠɪᴇꜱ ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴇᴇ ᴍʏ ᴘᴏᴡᴇʀ 😈</b>
 """
-        buttons = [
+        btn = [
             InlineKeyboardButton('𝖢𝗅𝗂𝖼𝗄 𝖧𝖾𝗋𝖾', callback_data='start')
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
