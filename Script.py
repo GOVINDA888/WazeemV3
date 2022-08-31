@@ -10,7 +10,7 @@ class script(object):
 • 𝖥𝗋𝖺𝗆𝖾𝖶𝗈𝗋𝗄 : 𝖯𝗒𝗍𝗁𝗈𝗇 3\n
 • 𝖧𝗈𝗌𝗍𝖾𝖽 𝖮𝗇 : 𝖧𝖾𝗋𝗈𝗄𝗎\n
 • 𝖣𝖺𝗍𝖺𝖡𝖺𝗌𝖾 : 𝖬𝗈𝗇𝗀𝗈 𝖣𝖡\n
-📖 𝖭𝗈𝗍𝖾 : ആരും പേടിക്കേണ്ട എല്ലാവർക്കും  ബോട്ട്  ഉപയോഗിക്കാം</i>"""
+📖 𝖭𝗈𝗍𝖾 : ആരും പേടിക്കേണ്ട എല്ലാവർക്കും ഉപയോഗിക്കാം</i>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Unfortunately This Bot is an Closed source project. 
 -   
@@ -31,8 +31,6 @@ class script(object):
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
-    FILTERMENU_TXT = """Currently I Have 2 Filter Options!!!
- Here Is It"""
     
     BUTTON_TXT = """Help: <b>Buttons</b>
 
@@ -97,13 +95,16 @@ This module only works for my admins
 • /broadcast - <code>to broadcast a message to all users</code>"""
     STATUS_TXT = """<u>Cᴜʀʀᴇɴᴛ Dᴀᴛᴀʙᴀsᴇ Sᴛᴀᴛᴜs</u>
 
-📑 ғɪʟᴇs sᴀᴠᴇᴅ: <code>{}</code>
-👩🏻‍💻 ᴜsᴇʀs: <code>{}</code>
-👥 ɢʀᴏᴜᴘs: <code>{}</code>
-🗂️ ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code> 𝙼𝚒𝙱
-🛒 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝚒𝙱
+📑 𝖥𝗂𝗅𝖾𝗌 𝖲𝖺𝗏𝖾𝖽: <code>{}</code>
+👩🏻‍💻 𝖴𝗌𝖾𝗋𝗌: <code>{}</code>
+👥 𝖦𝗋𝗈𝗎𝗉𝗌: <code>{}</code>
+🗂️ 𝖮𝖼𝖼𝗎𝗉𝗂𝖽: <code>{}</code> 𝙼𝚒𝙱
+🛒 𝖥𝗋𝖾𝖾 𝖲𝗍𝗈𝗋𝖺𝗀𝖾: <code>{}</code> 𝙼𝚒𝙱
 """
     CPU_TXT = """<i><u>𝖬𝗒 𝖲𝖾𝗋𝗏𝖾𝗋 𝖲𝗍𝖺𝗍𝗎𝗌📡</u></i>
+    
+<b>• 𝖢𝗉𝗎 𝖴𝗌𝖺𝗀𝖾 - {}%</b>
+<b>• 𝖱𝖺𝗆 𝖴𝗌𝖺𝗀𝖾 - {}%</b>
 """
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
