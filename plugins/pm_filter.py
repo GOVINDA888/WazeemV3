@@ -42,14 +42,14 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("ᴅᴏɴ'ᴛ ᴄʟɪᴄᴋ ᴏᴛʜᴇʀ's ᴘʀᴏᴘᴇʀᴛʏ,ɪᴛs ɴᴏᴛ ɢᴏᴏᴅ ᴅᴜᴅᴇ🤧", show_alert=True)
+        return await query.answer("𝖣𝗈𝗇'𝗍 𝖴𝗌𝖾 𝖮𝗍𝗁𝖾𝗋'𝗌 𝖯𝗋𝗈𝗉𝗋𝖾𝗍𝗒,𝖠𝗌𝗄 𝖸𝗈𝗎𝗋 𝖲𝖾𝗅𝖿🤧", show_alert=True)
     try:
         offset = int(offset)
     except:
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer(" ʏᴏᴜ ᴀʀᴇ ᴜsɪɴɢ ᴍʏ ᴏʟᴅ ᴍᴇssᴀɢᴇ, ᴋɪɴᴅʟʏ ᴘʟᴇᴀsᴇ ʀᴇǫᴜᴇsᴛ ᴀɢᴀɪɴ🌜.", show_alert=True)
+        await query.answer(" 𝖸𝗈𝗎 𝖠𝗋𝖾 𝖴𝗌𝗂𝗇𝗀 𝖬𝗒 𝖮𝗅𝖽 𝖬𝖾𝗌𝗌𝖺𝗀𝖾 𝖯𝗅𝖾𝖺𝗌𝖾 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖠𝗀𝖺𝗂𝗇🌜.", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -85,7 +85,7 @@ async def next_page(bot, query):
         ]
     btn.insert(0,
         [
-            InlineKeyboardButton(f'♨️ {search} ♨️', 'copyright')
+            InlineKeyboardButton(f' {search} ', 'copyright')
         ]
     )
     btn.insert(1,
@@ -103,20 +103,20 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("◀️ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📖 ᴘᴀɢᴇs {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
+            [InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"📖 Pᴀɢᴇs {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"🗓 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("ɴᴇxᴛ ", callback_data=f"next_{req}_{key}_{n_offset}")])
+             InlineKeyboardButton("Nᴇxᴛ ", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("◀️ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"🗓 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("ɴᴇxᴛ ▶️", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("Nᴇxᴛ ▶️", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -132,12 +132,12 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("ᴅᴏɴ'ᴛ ᴄʟɪᴄᴋ ᴏᴛʜᴇʀ's ᴘʀᴏᴘᴇʀᴛʏ,ɪᴛs ɴᴏᴛ ɢᴏᴏᴅ ᴅᴜᴅᴇ🤧", show_alert=True)
+        return await query.answer("𝖣𝗈𝗇'𝗍 𝖴𝗌𝖾 𝖮𝗍𝗁𝖾𝗋'𝗌 𝖯𝗋𝗈𝗉𝗋𝖾𝗍𝗒,𝖠𝗌𝗄 𝖸𝗈𝗎𝗋 𝖲𝖾𝗅𝖿🤧", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
-        return await query.answer("Aʜʜ... Bᴜᴛᴛᴏɴ Exᴘɪʀᴇᴅ Pʟᴇᴀsᴇ Rᴇǫᴜᴇsᴛ Aɢᴀɪɴ ..👩‍🦯", show_alert=True)
+        return await query.answer("𝖡𝗎𝗍𝗍𝗈𝗇 𝖤𝗑𝗉𝗂𝗋𝖾𝖽 𝖲𝗈,𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖠𝗀𝖺𝗂𝗇..👩‍🦯", show_alert=True)
     movie = movies[(int(movie_))]
     await query.answer('Checking for Movie in database...')
     k = await manual_filters(bot, query.message, text=movie)
@@ -147,7 +147,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('ᴛʜɪs ᴍᴏᴠɪᴇ ɴᴏᴛ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ..👩‍🦯')
+            k = await query.message.edit('𝖳𝗁𝗂𝗌 𝖬𝗈𝗏𝗂𝖾 𝖭𝗈𝗍 𝖥𝗈𝗎𝗇𝖽𝖾𝖽 𝖨𝗇 𝖬𝗒 𝖣𝖺𝗍𝖺𝖡𝖺𝗌𝖾 ..👩‍🦯')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -227,8 +227,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton(f"{stat}", callback_data=f"{cb}:{group_id}"),
-             InlineKeyboardButton("ᴅᴇʟᴇᴛᴇ", callback_data=f"deletecb:{group_id}")],
-            [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="backcb")]
+             InlineKeyboardButton("Dᴇʟᴇᴛᴇ", callback_data=f"deletecb:{group_id}")],
+            [InlineKeyboardButton("Bᴀᴄᴋ", callback_data="backcb")]
         ])
 
         await query.message.edit_text(
@@ -385,7 +385,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("ɪ ʟɪᴋᴇ ʏᴏᴜʀ sᴍᴀʀᴛɴᴇss,ʙᴜᴛ ᴅᴏɴ'ᴛ ʙᴇ ᴏᴠᴇʀ sᴍᴀʀᴛɴᴇss😒", show_alert=True)
+            await query.answer("𝖨 𝖫𝗂𝗄𝖾 𝖸𝗈𝗎𝗋 𝖲𝗆𝖺𝗋𝗍𝗇𝖾𝗌𝗌,𝖡𝗎𝗍 𝖣𝗈𝗇'𝗍 𝖡𝖾 𝖮𝗏𝖾𝗋𝖲𝗆𝖺𝗋𝗍𝗇𝖾𝗌𝗌😒", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -464,7 +464,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.FILTERMENU_TXT,
+            text='𝖢𝗎𝗋𝗋𝖾𝗇𝗍𝗅𝗒 𝖨 𝖧𝖺𝗏𝖾 2 𝖥𝗂𝗅𝗍𝖾𝗋 𝖮𝗉𝗍𝗂𝗈𝗇𝗌 𝖠𝗏𝖺𝗂𝗅𝖻𝗅𝖾',
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -484,7 +484,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='about')
+            InlineKeyboardButton('👩‍🦯 Bᴀᴄᴋ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -494,8 +494,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "manuelfilter":
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('⏹️ ʙᴜᴛᴛᴏɴs', callback_data='button')
+            InlineKeyboardButton('👩‍🦯 Bᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('⏹️ Bᴜᴛᴛᴏɴs', callback_data='button')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -505,7 +505,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "button":
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='manuelfilter')
+            InlineKeyboardButton('👩‍🦯 Bᴀᴄᴋ', callback_data='manuelfilter')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -515,7 +515,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "autofilter":
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('👩‍🦯 Bᴀᴄᴋ', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -525,7 +525,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "coct":
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('👩‍🦯 Bᴀᴄᴋ', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -535,8 +535,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "extra":
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('👮‍♂️ ᴀᴅᴍɪɴ', callback_data='admin')
+            InlineKeyboardButton('👩‍🦯 Bᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('👮‍♂️ Aᴅᴍɪɴ', callback_data='admin')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -546,7 +546,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "admin":
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='extra')
+            InlineKeyboardButton('👩‍🦯 Bᴀᴄᴋ', callback_data='extra')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -557,9 +557,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('Cᴘᴜ Sᴛᴀᴛᴜs', callback_data='stats_cpu'),
-            InlineKeyboardButton('♻️ ʀᴇғʀᴇsʜ', callback_data='rfrsh')
+            InlineKeyboardButton('♻️ Rᴇғʀᴇsʜ', callback_data='rfrsh')
         ], [
-            InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('👩‍🦯 Bᴀᴄᴋ', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -577,8 +577,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('♻️ ʀᴇғʀᴇsʜ', callback_data='rfrsh')
+            InlineKeyboardButton('👩‍🦯 Bᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('♻️ Rᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -595,11 +595,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "stats_cpu":
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='stats')
+            InlineKeyboardButton('👩‍🦯 Bᴀᴄᴋ', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        cpu = psutil.cpu_percent()
+        ram = psutil.virtual_memory().percent
         await query.message.edit_text(
-            text=script.CPU_TXT,
+            text=script.CPU_TXT,format(cpu, ram),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
