@@ -1,14 +1,16 @@
 class script(object):
-    START_TXT = """<b><i>ʜᴇʏ 👋  {}  ʙᴜᴅᴅʏ 💝
-ᴍʏ ɴᴀᴍᴇ ɪꜱ  <a href=https://t.me/Adv_AutoFilBot><b> Wᴀᴢᴇᴇᴍ </b></a>  ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ʏᴏᴜ ᴍᴏᴠɪᴇꜱ ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴇᴇ ᴍʏ ᴘᴏᴡᴇʀ 💗</b></i>"""
-    HELP_TXT = """<b>🚩 ʜᴇʟʟᴏ {} ʙᴜᴅᴅʏ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ʜᴇʟᴘ ᴍᴏᴅᴜʟᴇ 💝</b>"""
-    ABOUT_TXT = """<b><i>• ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/Adv_AutoFilBot><b>Wᴀᴢᴇᴇᴍ</b></a>\n
-• ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/humen_tg><b>Hᴜᴍᴇɴ ⛔</b></a>\n
-• ʟᴀɴɢᴜᴀɢᴇ : ᴘʏʀᴏɢʀᴀᴍ\n
-• ꜰʀᴀᴍᴇᴡᴏʀᴋ : ᴘʏᴛʜᴏɴ 3\n
-• ʜᴏsᴛᴇᴅ ᴏɴ : ʜᴇʀᴏᴋᴜ\n
-• ᴅᴀᴛᴀʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ\n
-📖 Nᴏᴛᴇ : ആരും പേടിക്കേണ്ട എല്ലാവർക്കും  ബോട്ട്  ഉപയോഗിക്കാം</i>"""
+    START_TXT = """<i>𝖧i {}, <b>𝖭𝗂𝖼𝖾 𝗍𝗈 𝗆𝖾𝖾𝗍 𝗒𝗈𝗎 🙌<\b>
+ 𝖨'𝗆 𝗃𝗎𝗌𝗍 𝖺 𝗌𝗂𝗆𝗉𝗅𝖾 𝗉𝗋𝖾 - 𝖿𝗎𝗇𝖼𝗍𝗂𝗈𝗇𝖾𝖽 𝖺𝗎𝗍𝗈𝖿𝗂𝗅𝗍𝖾𝗋 𝖻𝗈𝗍
+ i𝗍𝗌 𝖾𝖺𝗌𝗒 𝗍𝗈 𝗎𝗌𝖾 𝗆𝖾; 𝗃𝗎𝗌𝗍 𝖺𝖽𝖽 𝗆𝖾 𝗍𝗈 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉 𝖺𝗌 𝖺𝖽𝗆𝗂n,𝖨 𝖶𝗂𝗅𝗅 𝖬𝖺𝗇𝖺𝗀𝖾 𝖨𝗇𝗍𝗈 𝖳𝗁𝖾 𝖱𝖾𝗌𝗍😌🔥</i>"""
+    HELP_TXT = """<b><i>𝖧𝖾𝗅𝗅𝗈 𝖬𝗋. {} 𝖨𝗍'𝗌 𝖬𝗒 𝖧𝖾𝗅𝗉 𝖬𝗈𝖽𝗎𝗅𝖾</b>"""
+    ABOUT_TXT = """<b><i>• 𝖬𝗒 𝖭𝖺𝗆𝖾: <a href=https://t.me/cvEva_Bot><b>Wᴀᴢᴇᴇᴍ ⚡</b></a>\n
+• 𝖬𝗒 𝖵𝖾𝗋𝗌𝗂𝗈𝗇 : 𝖵2.1
+• 𝖣𝖾𝗏𝗈𝗅𝖾𝗉𝖾𝗋 : <a href=https://t.me/humen_tg><b>Hᴜᴍᴇɴ ⛔</b></a>\n
+• 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : 𝖯𝗒𝗋𝗈𝗀𝗋𝖺𝗆\n
+• 𝖥𝗋𝖺𝗆𝖾𝖶𝗈𝗋𝗄 : 𝖯𝗒𝗍𝗁𝗈𝗇 3\n
+• 𝖧𝗈𝗌𝗍𝖾𝖽 𝖮𝗇 : 𝖧𝖾𝗋𝗈𝗄𝗎\n
+• 𝖣𝖺𝗍𝖺𝖡𝖺𝗌𝖾 : 𝖬𝗈𝗇𝗀𝗈 𝖣𝖡\n
+📖 𝖭𝗈𝗍𝖾 : ആരും പേടിക്കേണ്ട എല്ലാവർക്കും  ബോട്ട്  ഉപയോഗിക്കാം</i>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Unfortunately This Bot is an Closed source project. 
 -   
@@ -101,11 +103,7 @@ This module only works for my admins
 🗂️ ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code> 𝙼𝚒𝙱
 🛒 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝚒𝙱
 """
-    CPU_TXT = """<u>This Option Coming Soon</u>
-
-This Option Use For To Know My CPU & Ram Usage's percentage... Currently My Devoleper Not Added But It will be added in the future⚡
- 
- ⏳ Sᴛᴀʏ Tᴜɴᴇᴅ
+    CPU_TXT = """<i><u>𝖬𝗒 𝖲𝖾𝗋𝗏𝖾𝗋 𝖲𝗍𝖺𝗍𝗎𝗌📡</u></i>
 """
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
