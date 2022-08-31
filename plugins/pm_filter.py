@@ -598,8 +598,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('👩‍🦯 Bᴀᴄᴋ', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        cpu = psutil.cpu_percent()
-        ram = psutil.virtual_memory().percent
+        cpu = await db.cpu_percent()
+        ram = await db.virtual_memory().percent
         await query.message.edit_text(
             text=script.CPU_TXT,format(cpu, ram),
             reply_markup=reply_markup,
