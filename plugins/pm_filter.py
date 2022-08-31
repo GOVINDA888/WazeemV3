@@ -601,7 +601,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         cpu = await db.cpu_percent()
         ram = await db.virtual_memory().percent
         await query.message.edit_text(
-            text=script.CPU_TXT,format(cpu, ram),
+            text=script.CPU_TXT,(format(cpu, ram)),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -720,7 +720,7 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0,
         [
-            InlineKeyboardButton(f'♨️ {search} ♨️', 'copyright')
+            InlineKeyboardButton(f' {search} ', 'copyright')
         ]
     )
     btn.insert(1,
@@ -737,11 +737,11 @@ async def auto_filter(client, msg, spoll=False):
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton(text=f"🗓 1/{math.ceil(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text="ɴᴇxᴛ ▶️", callback_data=f"next_{req}_{key}_{offset}")]
+             InlineKeyboardButton(text="Nᴇxᴛ ▶️", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="⛔ ɴᴏ ᴍᴏʀᴇ ғɪʟᴇs", callback_data="no more")]
+            [InlineKeyboardButton(text="⛔ Nᴏ Mᴏʀᴇ Fɪʟᴇs", callback_data="no more")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
