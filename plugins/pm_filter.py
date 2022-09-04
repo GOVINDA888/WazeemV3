@@ -659,10 +659,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton( 'ʀᴇᴅɪʀᴇᴄᴛ ᴛᴏ',
-                                         callback_data=f'setgs#redirect_to#{settings["redirect_to"]}#{str(grp_id)}',),
+                    InlineKeyboardButton( 'Redirect To',
+                                         callback_data=f'setgs#redirect_to#{settings["redirect_to"]}#{grp_id}',),
                     InlineKeyboardButton('👤 PM' if settings["redirect_to"] == "PM" else '📄 Chat',
-                                         callback_data=f'setgs#redirect_to#{settings["redirect_to"]}#str(grp_id)}',)                           
+                                         callback_data=f'setgs#redirect_to#{settings["redirect_to"]}#{grp_id}',),                           
                 ],
                 [
                     InlineKeyboardButton('ʙᴏᴛ ᴘᴍ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
