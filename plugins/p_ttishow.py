@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/WazeemSupport')
+            InlineKeyboardButton('📢 Updates', url='https://t.me/WazeemUpdates')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -233,6 +233,12 @@ async def unban_a_user(bot, message):
         await db.remove_ban(k.id)
         temp.BANNED_USERS.remove(k.id)
         await message.reply(f"Successfully unbanned {k.mention}")
+
+        
+@Client.on_message(filters.command('about') & filters.incoming)
+async def get_ststs(bot, message):
+    Humen_TG = await message.reply('Lets Check Out My Background 😌...')
+    await Humen_Tg.edit(script.STATUS_TXT.format(temp.U_NAME, temp.B_NAME))
 
 
     
