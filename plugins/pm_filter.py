@@ -577,8 +577,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 Bᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('Cᴘᴜ Sᴛᴀᴛᴜs', callback_data='stats_cpu'),
             InlineKeyboardButton('♻️ Rᴇғʀᴇsʜ', callback_data='rfrsh')
+        ], [
+            InlineKeyboardButton('👩‍🦯 Bᴀᴄᴋ', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
